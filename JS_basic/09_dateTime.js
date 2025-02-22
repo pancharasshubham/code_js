@@ -12,29 +12,34 @@
 
 
 let myCreateDate = new Date(2023, 0, 23)
-// console.log(myCreateDate.toDateString());
+//console.log(myCreatedDate) //
+// console.log(myCreateDate.toDateString()); // MON JAN 23 2023
 
 // let myCreateDate2 = new Date(2023, 0, 23, 5, 3)
-// console.log(myCreateDate2.toLocaleString());
+// console.log(myCreateDate2.toLocaleString()); // 1/23/2023, 5:03:00 AM
 
+// let myCreateDate2 = new Date("01-14-2023")
+// console.log(myCreateDate2.toLocaleString()); // 1/14/2023, 12:00:00 AM
 
+// use in quizzes, polls 
 let myTimeStamp = Date.now()
 
-console.log(myTimeStamp);
-console.log(myCreateDate.getTime());
+console.log(myTimeStamp); // 167677672589191
+console.log(myCreateDate.getTime()); // 
 
 console.log(Date.now());
-console.log(Math.floor(Date.now()/1000));
+console.log(Math.floor(Date.now()/1000)); // changes miliseconds into seconds 
 
 let newDate = new Date();
 console.log(newDate);
-console.log(newDate.getMonth());
-console.log(newDate.getDay());
+console.log(newDate.getMonth()); // 02
+console.log(newDate.getDay()); // 3
 
 //*****************imp*******************//
 
 newDate.toLocaleString('default',{
     weekday: "long",
+    //timezone // search it online how use timezone.
 })
 
 
