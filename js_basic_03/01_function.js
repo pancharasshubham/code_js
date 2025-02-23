@@ -46,6 +46,9 @@ function loginUserMessage(username){
 
 // console.log(loginUserMessage())
 
+
+// function with array and object 
+
 // function calculateCartPrice(...num1){
 //     return num1
 // }
