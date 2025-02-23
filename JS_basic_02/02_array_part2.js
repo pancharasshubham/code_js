@@ -28,7 +28,7 @@ console.log(Array.from("saalar"))           //  [ 's', 'a', 'a', 'l', 'a', 'r' ]
 console.log(Array.from({name: "saalar"}))   //  intresting - it gives you empty array [],
 // you have to tell from which value array should be created 
 
-let score1 = 1000
+let score1 = 1000   
 let score2 = 2000
 let score3 = 5000
 
