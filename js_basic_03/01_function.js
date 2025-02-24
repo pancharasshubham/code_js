@@ -72,7 +72,7 @@ function handleobject(anyobject){
 
 // handleobject(user)
 
-//another way to give value is
+//another way to inclued value to object as function
 handleobject({
     username : "rajmaanar",
     kills : 20
