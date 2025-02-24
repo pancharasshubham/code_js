@@ -46,8 +46,7 @@ function addone(num){
 }
 
 
-
-// another way to declare function
+// another way to declare function -> with expression 
 
 // hoisting : you can not access variable before declaring it
 
