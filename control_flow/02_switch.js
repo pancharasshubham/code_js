@@ -32,6 +32,6 @@ switch (month) {
 }
 
 
-// why is break is use in switch
+// why break is use in switch
 // -> if break is not declare then, when case is match with input the next cases will all run expect default, that's why break is requird
 // here if we comment break from march case then output will be (march and april), so be careful with break statement 
