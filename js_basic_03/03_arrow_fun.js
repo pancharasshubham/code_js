@@ -3,16 +3,16 @@
 //     price: 999,
 
 //     welcomeMessage: function (){
-//         // console.log(`${this.username}, welcome to website`)
-//         console.log(this);
+//         // console.log(`${this.username}, welcome to website`) // this = current context refrence
+//         console.log(this);   // gives you all context -> run 
 //     }
 // }
 
 // user.welcomeMessage()    // saalar welcome to website
-// user.username = "rajmannar";
+// user.username = "rajmannar"; // we change context here 
 // user.welcomeMessage()    // rajmannar welcome to website
 
-// console.log(this);   // {}
+// console.log(this);   // {} - gives you empty object in node env
 
 // function rajmaanar(){
 //     console.log(this);
@@ -20,9 +20,11 @@
 
 // rajmaanar()  
 
+// this keyword only gives value in object not in function
+
 // function rajmaanar(){
 //     let username = "saalar";
-//     console.log(this.username);                 // code give you undefined value
+//     console.log(this.username);                 // code give you undefined value in function
 // }
 // rajmaanar()
 
@@ -44,9 +46,10 @@
 
 // rajmaanar()
 
-// ************************************arrow funct
+// ************************************arrow funct***********************************
+
 // const addTwo = (num1, num2) => {
-//     return num1 + num2                                     // if you use {} then return is required
+//     return num1 + num2                                     // if you use {} then return is required -> explicit return 
 // }
 
 
