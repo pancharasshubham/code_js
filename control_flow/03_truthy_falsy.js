@@ -1,12 +1,12 @@
-// falsy values
+// ******************** falsy values ****************************
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN, 
 
-// truty values
+// ********************* truty values *************************
 
 // "0", 'false', " ", [], {}, function(){}
 
-// how to compare empty array 
+// *******************how to compare empty array *********************
 
 // const userEmail = []
 
@@ -14,7 +14,7 @@
 //     console.log("Array is empty")
 // }
 
-// how to compare empty object
+// ********************* how to compare empty object *******************
 
 // const emptyObj = {}
 
@@ -23,15 +23,31 @@
 
 // }
 
-// Nullish Coalescing Operator (??) : null undefined
+// ******************************* compare truthy values *******************************
+
+// false == 0       // true
+
+// false == ''      // true
+
+// 0 == ''          // true
+
+// ********************** Nullish Coalescing Operator (??) : null undefined **********************
+
 // when two value fetch from backend and value will be null code will fetch another value
+
 // let val1;
+
+// val1 = 5 ?? 10                   // 5
+
 // val1 = null ?? 10;               //  10
+
 // val1 = null ?? 100 ?? 4300       //  100
+
 // val1 = undefined ?? 40           // 40
+
 // console.log(val1);
 
-// terniary Operator
+// *************************** terniary Operator (short hand of if-else) ********************************
 
 // condition ? true : false
 
