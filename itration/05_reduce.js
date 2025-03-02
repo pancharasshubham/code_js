@@ -17,7 +17,7 @@ const shoppingCart = [
     {
         itemName: "python course",
         price : 2999
-    },
+    }, 
     {
         itemName: "cybersecurity course",
         price : 4999
