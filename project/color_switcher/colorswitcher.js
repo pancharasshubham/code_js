@@ -17,7 +17,7 @@ color.forEach(function (btw){
     if (deva.target.id === 'pink') {
         body.style.backgroundColor = deva.target.id;        
     }
-    if (deva.target.id === 'blue') {
+    if (deva.target.id === 'red') {
         body.style.backgroundColor = deva.target.id;        
     }
     })
