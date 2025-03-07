@@ -41,6 +41,7 @@
 
 
 <!-- DOM Manupulation -->
+
 <!-- document.getElementById("heading2").innerHTML = "<h1>Rajmannar Ka Saalar</h1>" -->
 
 <!-- innerHTML - get html tag of document -->
@@ -58,7 +59,6 @@ myLi.forEach(function (li) {
 
 for-each with arrow function -->
 <!-- myLi.forEach( (li) => li.style.backgroundColor = '#212121' ) -->
-
 
 
  <!-- examples of DOM in Console -->
@@ -98,6 +98,47 @@ title.textContent   //'DOM learning with raajmannar ka saalar! aka Devaratha Rai
 title.innerHTML     //'DOM learning with raajmannar ka saalar! <span style="display: none;">aka Devaratha Raisar</span>'
 
 title.innerText     //'DOM learning with raajmannar ka saalar!' // here span tag is hidden in html
+
+
+// how to select password field
+
+document.querySelector('input[type="password"]')    //
+<input type=​"password" name=​"password" id=​"pass" placeholder=​"please type password">​   
+
+document.querySelector('ul')    //  <ul>​…​</ul>​
+
+let myUl = document.querySelector('ul') //  undefined
+
+myUl.querySelector('li')    //<li class=​"list-item">​…​</li>​
+
+let myLi = myUl.querySelector('li') // undefined
+
+myLi
+<li class=​"list-item" style=​"background-color:​ green;​ padding:​ 15px;​">​…​</li>​::marker​"raajmannar"</li>​
+
+myLi.style.backgroundColor = "green"    // 'green'
+
+myLi.style.padding = "15px"     // '15px'
+
+myLi.textContent = 'deva'       //  'deva'      //  it changes content in HTML
+
+document.querySelectorAll('li')     //
+
+NodeList(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-itemlength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+
+const tempLiList = document.querySelectorAll('li')      // undefined
+
+tempLiList      //  NodeList(3) [li.list-item, li.list-item, li.list-item]
+
+tempLiList[0].style.backgroundColor = "green"       //  'green'
+
+const myH1 = document.querySelectorAll("h1")        //undefined
+
+myH1        // NodeList(2) [h1#title.heading, h1#heading2]
+
+myH1[0].style.color = "red" //  'red'
+
+tempLiList.forEach( (l) => l.style.color = "red")   // undefined
 
 -->
 
