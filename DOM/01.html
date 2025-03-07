@@ -16,7 +16,7 @@
             border-radius: 10px;
             border: none;
             background-color: white;
-            padding: 10px;
+            padding: 10px; 
         }
     </style>
 </head>
@@ -29,7 +29,6 @@
         <h2>Ranga</h2>
         <h2>Bhargva</h2>
         <input type="password" name="password" id="pass" placeholder="please type password">
-
         <h2>designation : kapar</h2>
         <ul>
             <li class="list-item">raajmannar</li>
@@ -39,7 +38,6 @@
     </div>
 </body>
 </html>
-
 
 
 <!-- DOM Manupulation -->
@@ -60,3 +58,46 @@ myLi.forEach(function (li) {
 
 for-each with arrow function -->
 <!-- myLi.forEach( (li) => li.style.backgroundColor = '#212121' ) -->
+
+
+
+ <!-- examples of DOM in Console -->
+
+<!-- 
+
+document.getElementById("title")
+<h1 id="title" class="heading">​…​</h1>
+document.getElementById("title").id     // 'title'
+
+document.getElementById("title").classname  //undefined
+
+document.getElementById("title").className  //'heading'
+
+document.getElementById("title").getAttribute('id') //'title'
+
+document.getElementById("title").getAttribute('class')  //'heading'
+
+document.getElementById("title").setAttribute('class', 'text')  //undefined
+
+const title = document.getElementById("title")  //undefined 
+
+title   //<h1 id='title' class="text">​…​</h1>
+
+document.getElementById("title").setAttribute('class', 'text heading')  //undefined
+
+title   //<h1 id="title" class="text heading">​…​</h1>
+
+title.style.backgroundColor = 'green'   //  'green'
+
+title.style.padding = '15px'    //'15px'
+
+title.style.borderRadius = '5px'    //'5px'
+
+title.textContent   //'DOM learning with raajmannar ka saalar! aka Devaratha Raisar'
+
+title.innerHTML     //'DOM learning with raajmannar ka saalar! <span style="display: none;">aka Devaratha Raisar</span>'
+
+title.innerText     //'DOM learning with raajmannar ka saalar!' // here span tag is hidden in html
+
+-->
+
