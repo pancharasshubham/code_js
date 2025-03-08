@@ -14,7 +14,7 @@
 
 > HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
 
-**when we have HTMLCollection (forEach) will not work so we convert HTMLCollection in Array with help of (Arry.from)** 
+**when we have HTMLCollection, (forEach) will not work so we convert HTMLCollection in Array with help of (Arry.from)** 
 
 - Array.from(tempClassList)                 
 
@@ -82,7 +82,7 @@
 
 > 'Use'
 
-![javascript-wikipedia-DOM-Manipulation](./js-DOM.PNG)
+---
 
 **Here mw-body-content is class name in document**
 
@@ -108,26 +108,17 @@
 
 > undefined
 
-```
-{
-    myBody.forEach( function(h){
-        h.style.color = 'green';
-        h.style.backgroundColor = 'yellow';
-        h.padding = '10px';
-    })
-}
-```
-
-> undefined
-
+**Ex of chaining :- when we give multiple values in one go**
 ```
 {
      myBody.forEach( function(h){
-        h.style.color = 'green';
-        h.style.backgroundColor = 'yellow';
+        h.style.backgroundColor = 'green';
+        h.style.color = 'red';
         h.style.padding = '10px';
     })
 }
 ```
 
 > undefined
+
+![javascript-wikipedia-DOM-Manipulation](./js-DOM.PNG)
