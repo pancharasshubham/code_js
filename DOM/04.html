@@ -10,16 +10,24 @@
     <ul class="language">
         <li>Javascript</li>
     </ul>
+    <ul class="charname">
+        <li>deva</li>
+    </ul>
 </body>
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').
+            appendChild(li)             // optimization issue
     }
 
     addLanguage('python')
     addLanguage('typescript')
+
+// this appenChild travrse document tree when we add another language what if there is 1000 li
+
+// this method gives optimazatation issue so we use addOptilanguage function
 
     function addOptiLanguage(langName){
         const li = document.createElement('li')
@@ -31,6 +39,7 @@
 
     //Edit // how replace value with replaceWith
     const secondLang = document.querySelector("li:nth-child(2)")
+    
     // secondLang.innerHTML = "Mojo" // it's not optimised way{DSA}
 
     const newli = document.createElement('li')
