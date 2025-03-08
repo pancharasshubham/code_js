@@ -4,7 +4,9 @@
 
 ```HTMLCollection(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-itemaccessKey: ""ariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColSpan: nullariaCurrent: nullariaDescription: nullariaDisabled: nullariaExpanded: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributeStyleMap: StylePropertyMap {size: 1}attributes: NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}autocapitalize: ""autofocus: falsebaseURI: "http://127.0.0.1:5501/DOM/01.html"childElementCount: 0childNodes: NodeList [text]children: HTMLCollection []classList: DOMTokenList ['list-item', value: 'list-item']className: "list-item"clientHeight: 18clientLeft: 0clientTop: 0clientWidth: 657contentEditable: "inherit"dataset: DOMStringMap {}dir: ""draggable: falseelementTiming: ""enterKeyHint: ""firstChild: textfirstElementChild: nullhidden: falseid: ""inert: falseinnerHTML: "Vishnu"innerText: "Vishnu"inputMode: ""isConnected: trueisContentEditable: falselang: ""lastChild: textlastElementChild: nulllocalName: "li"namespaceURI: "http://www.w3.org/1999/xhtml"nextElementSibling: li.list-itemnextSibling: textnodeName: "LI"nodeType: 1nodeValue: nullnonce: ""offsetHeight: 18offsetLeft: 48offsetParent: body.bg-blackoffsetTop: 453offsetWidth: 657onabort: nullonanimationend: nullonanimationiteration: nullonanimationstart: nullonauxclick: nullonbeforecopy: nullonbeforecut: nullonbeforeinput: nullonbeforematch: nullonbeforepaste: nullonbeforexrselect: nullonblur: nulloncancel: nulloncanplay: nulloncanplaythrough: nullonchange: nullonclick: nullonclose: nulloncontentvisibilityautostatechange: nulloncontextlost: nulloncontextmenu: nulloncontextrestored: nulloncopy: nulloncuechange: nulloncut: nullondblclick: nullondrag: nullondragend: nullondragenter: nullondragleave: nullondragover: nullondragstart: nullondrop: nullondurationchange: nullonemptied: nullonended: nullonerror: nullonfocus: nullonformdata: nullonfullscreenchange: nullonfullscreenerror: nullongotpointercapture: nulloninput: nulloninvalid: nullonkeydown: nullonkeypress: nullonkeyup: nullonload: nullonloadeddata: nullonloadedmetadata: nullonloadstart: nullonlostpointercapture: nullonmousedown: nullonmouseenter: nullonmouseleave: nullonmousemove: nullonmouseout: nullonmouseover: nullonmouseup: nullonmousewheel: nullonpaste: nullonpause: nullonplay: nullonplaying: nullonpointercancel: nullonpointerdown: nullonpointerenter: nullonpointerleave: nullonpointermove: nullonpointerout: nullonpointerover: nullonpointerrawupdate: nullonpointerup: nullonprogress: nullonratechange: nullonreset: nullonresize: nullonscroll: nullonsearch: nullonsecuritypolicyviolation: nullonseeked: nullonseeking: nullonselect: nullonselectionchange: nullonselectstart: nullonslotchange: nullonstalled: nullonsubmit: nullonsuspend: nullontimeupdate: nullontoggle: nullontransitioncancel: nullontransitionend: nullontransitionrun: nullontransitionstart: nullonvolumechange: nullonwaiting: nullonwebkitanimationend: nullonwebkitanimationiteration: nullonwebkitanimationstart: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullonwebkittransitionend: nullonwheel: nullouterHTML: "<li class=\"list-item\" style=\"color: orange;\">Vishnu</li>"outerText: "Vishnu"ownerDocument: documentparentElement: ulparentNode: ulpart: DOMTokenList [value: '']prefix: nullpreviousElementSibling: li.list-itempreviousSibling: textrole: nullscrollHeight: 18scrollLeft: 0scrollTop: 0scrollWidth: 657shadowRoot: nullslot: ""spellcheck: truestyle: CSSStyleDeclaration {0: 'color', accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}tabIndex: -1tagName: "LI"textContent: "Vishnu"title: ""translate: truetype: ""value: 0virtualKeyboardPolicy: ""[[Prototype]]: HTMLLIElement(...)2: li.list-itemlength: 3[[Prototype]]: HTMLCollectionitem: ƒ item()length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object ```
 
-- const tempClassList = document.getElementsByClassName('list-item')  // undefined
+- const tempClassList = document.getElementsByClassName('list-item')  
+
+> undefined
 
 - tempClassList
 
@@ -17,13 +19,14 @@
 - const myConvertedArray = Array.from(tempClassList)  // undefined
 
 - myConvertedArray
-=> (3) [li.list-item, li.list-item, li.list-item]
+
+> (3) [li.list-item, li.list-item, li.list-item]
 
 - myConvertedArray.forEach(function(li){
     li.style.color = "orange"
 })
 
-=> undefined
+> undefined
 
 
 ---
@@ -35,7 +38,8 @@
 - const h1 = document.querySelector('h1')     // undefined
 
 - h1
-<h1 id="firstHeading" class="firstHeading mw-first-heading">​…​</h1>​
+
+> <h1 id="firstHeading" class="firstHeading mw-first-heading">​…​</h1>​
 
 - h1.innerHTML    // '<span class="mw-page-title-main">JavaScript</span>'
 
