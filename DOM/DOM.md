@@ -1,5 +1,7 @@
 # HTML Collection
 
+**Refer to 01.html in DOM folder for list-item class**
+
 **document.getElementsByClassName('list-item')**
 
 > ```HTMLCollection(3) [li.list-item, li.list-item, li.list-item]```
