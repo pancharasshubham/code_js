@@ -82,6 +82,8 @@
 
 ![javascript-wikipedia-DOM-Manipulation](./js-DOM.PNG)
 
+**Here mw-body-content is class name in document**
+
 - document.querySelectorAll('.mw-body-content')
 
 > NodeList [div#mw-content-text.mw-body-content]0: div#mw-content-text.mw-body-contentlength: 1[[Prototype]]: NodeList
@@ -104,18 +106,26 @@
 
 > undefined
 
-- myBody.forEach( function(h){
-    h.style.color = 'green';
-    h.style.backgroundColor = 'yellow';
-    h.padding = '10px';
-})
+```
+{
+    myBody.forEach( function(h){
+        h.style.color = 'green';
+        h.style.backgroundColor = 'yellow';
+        h.padding = '10px';
+    })
+}
+```
 
 > undefined
 
-- myBody.forEach( function(h){
-    h.style.color = 'green';
-    h.style.backgroundColor = 'yellow';
-    h.style.padding = '10px';
-})
+```
+{
+     myBody.forEach( function(h){
+        h.style.color = 'green';
+        h.style.backgroundColor = 'yellow';
+        h.style.padding = '10px';
+    })
+}
+```
 
 > undefined
