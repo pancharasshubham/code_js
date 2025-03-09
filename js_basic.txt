@@ -1,1 +1,4 @@
-learn about javascript from basic to advance 
+learn about javascript from basic to advance
+
+- var, let, const
+- 
