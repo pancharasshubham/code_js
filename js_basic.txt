@@ -8,3 +8,11 @@ let sword = "Katana"; // String
 const bullets = 50;   // Number
 let isArmed = true;   // Boolean
 
+
+// function 
+
+function attack(enemy) {
+    return `${enemy} defeated!`;
+}
+console.log(attack("Enemy1")); // Output: Enemy1 defeated!
+
