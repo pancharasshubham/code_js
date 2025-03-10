@@ -1,4 +1,10 @@
-learn about javascript from basic to advance
+learn about javascript from basic to advance with salaar reference
 
-- var, let, const
-- 
+console.log("Welcome to JavaScript, the Salaar way!");
+
+- var, const, let
+
+let sword = "Katana"; // String
+const bullets = 50;   // Number
+let isArmed = true;   // Boolean
+
