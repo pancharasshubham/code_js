@@ -29,7 +29,7 @@ form.addEventListener('submit', function (e) {
             }
 
         //show result
-        result.innerHTML = `Your BMI is :<span>${bmi}</span> <br> ${message}`;
+        result.innerHTML = `Your BMI is :<span>${bmi}</span> <br> <strong>${message}</strong>`;
         
     }
 );
