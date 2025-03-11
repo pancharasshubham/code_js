@@ -4,9 +4,9 @@ console.log("Welcome to JavaScript, the Salaar way!");
 
 - var, const, let
 
-let sword = "Katana"; // String
-const bullets = 50;   // Number
-let isArmed = true;   // Boolean
+1) var - It's Outdated datatype which is use globle scope, var value can be accessible outside scope.
+2) let - Is has block scope, it can only access in it's scope.
+3) const - It has block scope like let, but once assigned, its value cannot be changed.
 
 
 // function 
@@ -15,11 +15,3 @@ function attack(enemy) {
     return `${enemy} defeated!`;
 }
 console.log(attack("Enemy1")); // Output: Enemy1 defeated!
-
-
-let enemyPower = 80;
-if (enemyPower > 100) {
-    console.log("Retreat!");
-} else {
-    console.log("Attack!");
-}
