@@ -1,12 +1,12 @@
 const color = document.querySelectorAll('.button');
-console.log(color);
+// console.log(color);
 
 const body = document.querySelector('body')
 
 color.forEach(function (btw){
-    console.log(btw);
+    // console.log(btw);
     btw.addEventListener('click', function(deva){
-    console.log(deva.target);
+    // console.log(deva.target);
 
     if (deva.target.id === 'yellow') {
         body.style.backgroundColor = deva.target.id;        
@@ -17,7 +17,7 @@ color.forEach(function (btw){
     if (deva.target.id === 'pink') {
         body.style.backgroundColor = deva.target.id;        
     }
-    if (deva.target.id === 'red') {
+    if (deva.target.id === 'blue') {
         body.style.backgroundColor = deva.target.id;        
     }
     })
