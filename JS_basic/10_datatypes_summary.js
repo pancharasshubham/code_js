@@ -28,5 +28,5 @@ const myfunction = function(){
     console.log("khansar ka saalar");
 }
 
-// javascript is danyamic type or static type ? 
+// javascript is dynamic type or static type ? // dynamic
 
