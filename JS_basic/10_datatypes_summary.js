@@ -1,7 +1,9 @@
 // primitive
-// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
-// reference (non primitive)
+// 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// reference (non primitive) - what is this ?
+// Non-primitive data types, also known as reference types, are objects and derived data types. They can store collections of values or more complex entities. -> Array and object
 
 // symbol - datatype
 
@@ -26,8 +28,5 @@ const myfunction = function(){
     console.log("khansar ka saalar");
 }
 
-
 // javascript is danyamic type or static type ? 
-
-
 
