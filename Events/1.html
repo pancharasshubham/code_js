@@ -30,9 +30,18 @@
 
     // >  jQuery - on
 
-    document.getElementById('owl').addEventListener('click', function(){
-        alert("owl clicked again")
-    })
+    // document.getElementById('owl').addEventListener('click', function(){
+    //     alert("owl clicked again")
+    // })
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log(e);
+    }, false)
+
+    // types, timestamp, defaultPrevented
+    // target, toElement, setElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlkey, shiftkey, keycode
      
 
 
