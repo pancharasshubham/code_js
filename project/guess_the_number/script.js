@@ -58,14 +58,14 @@ function checkGuess(guess){
 // to clean prev value and update prv value in array and update guess value 
 function displayGuess(guess){
     userInput.value = ''
-    guessSlot.innerHTML += `${guess}`
+    guessSlot.innerHTML += `${guess} , `
     numGuess++;
     remaining.innerHTML = `${11 - numGuess}`
 }
 
 // to print message 
 function displayMessage(message){
-    //
+    lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 
 // to end game
