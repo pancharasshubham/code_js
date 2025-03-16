@@ -24,7 +24,23 @@ if(playGame){
 
 // this to validate enter value is between 1 - 100
 function validateGuess(guess){
-    //
+    if(isNaN(guess)){
+        alert('please enter a valid number')
+    }else if(guess < 1){
+        alert('please enter a number more than 1')
+    }else if(guess > 100){
+        alert('please enter a number less than 100')
+    }else{
+        prevGuess.push(guess)
+        if(numGuess === 11){
+            displayGuess(guess)
+            displayMessage(`Game Over. random number was ${randomNumber}`)
+            endGame()
+        } else{
+            displayGuess(guess)
+            checkGuess(guess)
+        }
+    }
 }
 
 // to check given value is equal to random no/ high / low
