@@ -45,12 +45,22 @@ function validateGuess(guess){
 
 // to check given value is equal to random no/ high / low
 function checkGuess(guess){
-    //
+    if(guess === randomNumber){
+        displayMessage(`congratulation, you guesses it right`)
+        endGame()
+    }else if (guess < randomNumber){
+        displayMessage(`Number is too low`)
+    } else if(guess > randomNumber){
+        displayMessage(`Number is too high`)
+    }
 }
 
 // to clean prev value and update prv value in array and update guess value 
 function displayGuess(guess){
-
+    userInput.value = ''
+    guessSlot.innerHTML += `${guess}`
+    numGuess++;
+    remaining.innerHTML = `${11 - numGuess}`
 }
 
 // to print message 
