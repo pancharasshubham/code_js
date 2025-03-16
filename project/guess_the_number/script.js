@@ -14,6 +14,14 @@ let numGuess = 1
 
 let playGame = true
 
+if(playGame){
+    submit.addEventListener('click', function(e){
+        e.preventDefault()
+        const guess = parseInt(userInput.value)
+        validateGuess(guess)
+    })
+}
+
 // this to validate enter value is between 1 - 100
 function validateGuess(guess){
     //
@@ -31,5 +39,15 @@ function displayGuess(guess){
 
 // to print message 
 function displayMessage(message){
+    //
+}
+
+// to end game
+function endGame(){
+    //
+}
+
+// to start new game
+function newGame(){
     //
 }
