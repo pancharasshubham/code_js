@@ -21,7 +21,7 @@ const randomColor = function () {
   };
   const stopChangingColor = function () {
     clearInterval(intervalId);
-    intervalId = null;
+    intervalId = null;      // this is clean code it imporve memory 
   };
   
   document.querySelector('#start').addEventListener('click', startChangingColor);
