@@ -61,7 +61,9 @@
     // click on images and remove it 
 
     document.querySelector('#images').addEventListener('click', function(){
-        // console.log(e.target.parentNode);
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
     })
 
 </script>
