@@ -15,3 +15,5 @@ function attack(enemy) {
     return `${enemy} defeated!`;
 }
 console.log(attack("Enemy1")); // Output: Enemy1 defeated!
+
+what is promise ? 
