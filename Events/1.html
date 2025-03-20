@@ -40,24 +40,29 @@
     // })
 
     
-    // google this 
+    // google this (browser and enviorment events)
     // types, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altKey, ctrlkey, shiftkey, keyCode
-    // bubble event, stopPropagation
-    
+    // what is eventPropagation ->  bubble event, stopPropagation
+    // what is capturing and bubbling ? 
+
+    // event object - goole this ?
     document.getElementById('images').addEventListener('click', function(e){
         console.log("clicked inside the ul");
-    }, false)
+    }, false)   // change this to true and see o/p 
     
+    // this is bubbling event
     document.getElementById('owl').addEventListener('click', function(e){
         console.log("owl clicked");
-        e.stopPropagation()
-    }, false)
+        e.stopPropagation()         // this will not allow bubble your event. 
+    }, false)   // // change this to true and see o/p 
+
+    // if you give value to this function as true this will change o/p
 
     document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault();
+        e.preventDefault(); 
         e.stopPropagation()
         console.log("google clicked");
     }, false)
