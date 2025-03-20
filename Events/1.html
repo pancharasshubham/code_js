@@ -62,15 +62,15 @@
     // if you give value to this function as true this will change o/p
 
     document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault(); 
-        e.stopPropagation()
+        e.preventDefault(); // this will give o/p as google click with bubbling 
+        e.stopPropagation() // this will give o/p without bubbling
         console.log("google clicked");
     }, false)
     
     // click on images and remove it 
 
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+        console.log(e.target.tagName);  // tagName use when you want remove specific tag 
         if(e.target.tagName === 'IMG'){
             console.log(e.target.id);
             let removeIt = e.target.parentNode
