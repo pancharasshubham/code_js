@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: #fff">
+    <h1>shubham github json</h1>
+    <button id="info">Get Info</button>
+    <div class="card" id="profileCard"></div>    
+</body>
+<script>
+    const info = document.querySelector('#info')
+
+    info.addEventListener('click', function(){
+    
+    const requestUrl = 'https://api.github.com/users/pancharasshubham'
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)      // parse -: convert sting to json
+            console.log(data);
+            console.log(data.avatar_url);
+            console.log(data.followers);
+
+            const card = document.getElementById('profileCard');
+            
+            card.innerHTML = `
+                <img src = "${data.avatar_url}" alt="profile picture">
+                <h2>${data.login}</h2>
+                <p>Followers: ${data.followers}</p>
+            `;
+            card.style.display = "block";
+       
+        }
+    };
+
+    xhr.send()
+    })
+
+    
+</script>
+</html>
