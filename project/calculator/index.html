@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator with js</title>
     <style>
+        body{
+            /* background-color: #212121; */
+        }
+        .calculator{
+            max-width: 40%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        button{
+            font-size: 3em;
+
+        }
+
+        button:last-child{
+            display: grid;
+            align-items: center;
+            grid-column: 4;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            background-color: orange;
+        }
         .calculator_keys{
             display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, auto);
         }
     </style>
 </head>
