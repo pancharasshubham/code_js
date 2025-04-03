@@ -35,6 +35,7 @@ what is object.getOwnPropertyDescriptor ?
 # revise onces again
 
 # Projects 
-- instagram like app for reels only - inspireX
+- instagram like app for motivation reels - inspireX
+- instagram save page remainder for your all save post/reels/stories
 
 
