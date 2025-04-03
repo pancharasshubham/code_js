@@ -32,3 +32,4 @@ javascript is prototype-based language
 
 what is object.getOwnPropertyDescriptor ? 
 
+# revise onces again
