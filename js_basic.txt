@@ -20,3 +20,4 @@ what is promise ?
 what is this and new object 
 what is deboucing and throttling 
 
+what is lexical scpoing 
