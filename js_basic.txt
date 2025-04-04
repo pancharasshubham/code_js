@@ -1,13 +1,12 @@
-learn about javascript from basic to advance with salaar reference
+# learn about javascript from basic to advance with salaar reference
 
-console.log("Welcome to JavaScript, the Salaar way!");
+'''console.log("Welcome to JavaScript, the Salaar way!");'''
 
 - var, const, let
 
 1) var - It's Outdated datatype which is use globle scope, var value can be accessible outside scope.
 2) let - Is has block scope, it can only access in it's scope.
 3) const - It has block scope like let, but once assigned, its value cannot be changed.
-
 
 // function 
 
