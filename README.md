@@ -22,11 +22,10 @@ Object literal
 - Instances (new, this)
 
 ## 4 pillars
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
-
+1) Abstraction
+2) Encapsulation
+3) Inheritance
+4) Polymorphism
 
 javascript is prototype-based language
 
