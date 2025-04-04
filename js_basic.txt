@@ -17,3 +17,6 @@ function attack(enemy) {
 console.log(attack("Enemy1")); // Output: Enemy1 defeated!
 
 what is promise ? 
+what is this and new object 
+what is deboucing and throttling 
+
