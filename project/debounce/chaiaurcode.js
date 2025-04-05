@@ -37,3 +37,10 @@ function displayUserCard(user) {
     userCard.style.display = 'block';
   }
 
+// Attach debounce to input
+const inputField = document.getElementById('user-input');
+const debouncedFetch = debounce(fetchUserData, 500); // 500ms delay
+
+inputField.addEventListener('input', (e) => {
+  debouncedFetch(e.target.value);
+});
