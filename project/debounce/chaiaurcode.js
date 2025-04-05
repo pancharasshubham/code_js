@@ -25,3 +25,15 @@ async function fetchUserData(query) {
     }
   }
 
+// Update DOM with user data
+function displayUserCard(user) {
+    const userCard = document.getElementById('user-card');
+    userCard.innerHTML = `
+      <img src="${user.picture.large}" alt="User Image" />
+      <h2>${user.name.first} ${user.name.last}</h2>
+      <p><strong>Email:</strong> ${user.email}</p>
+      <p><strong>Location:</strong> ${user.location.city}, ${user.location.country}</p>
+    `;
+    userCard.style.display = 'block';
+  }
+
