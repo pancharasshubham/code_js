@@ -11,3 +11,8 @@ circle.style.background = "#00ffcc";
 circle.style.zIndex = "9999";
 circle.style.transition = "transform 0.1s ease-out";
 document.body.appendChild(circle);
+
+// Listen to mouse movement
+document.addEventListener("mousemove", (e) => {
+    circle.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+  });
